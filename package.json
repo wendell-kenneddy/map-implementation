@@ -1,0 +1,38 @@
+{
+  "name": "map-implementation",
+  "description": "A simple implementation of the map array method.",
+  "version": "1.0.0",
+  "author": "Wendell Kenneddy <wkenneddy505@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "private": false,
+  "files": [
+    "dist/",
+    "README.md",
+    "package.json",
+    "LICENSE.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wendell-kenneddy/map-implementation.git"
+  },
+  "bugs": {
+    "email": "wkenneddy505@gmail.com",
+    "url": "https://github.com/wendell-kenneddy/map-implementation/issues"
+  },
+  "homepage": "https://github.com/wendell-kenneddy/map-implementation",
+  "scripts": {
+    "build": "tsc --noEmit && esbuild src/index.ts --platform=node --minify --bundle --outdir=dist && tsc --emitDeclarationOnly --outDir dist",
+    "test": "jest"
+  },
+  "dependencies": {
+    "esbuild": "^0.14.25",
+    "ts-jest": "^27.1.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "esbuild-jest": "^0.5.0",
+    "jest": "^27.5.1",
+    "typescript": "^4.6.2"
+  }
+}
